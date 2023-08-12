@@ -3,37 +3,207 @@
 
 <head>
   @@include("src/html/base/head.html")
-  <title>ProjectName — Главная</title>
+  <title>Малыши-Карандаши Ясли — Главная</title>
 </head>
 
 <body class="page__body">
   <!-- для внутренних страниц используйте "headerActiveLinkIndex": 0\1\2 -->
   @@include("src/html/base/header.html", {
-    "index": true
+  "index": true
   })
 
   <main class="page__main main">
+    <h1 class="visually-hidden">Информация про Ясли</h1>
     <div class="container">
-      <p>
-        <button type="button" class="button" data-open-modal="feedback">modal--feedback link</button>
-      </p>
-      <p>
-        <button type="button" class="button" data-open-modal="success">modal--success link</button>
-      </p>
+      <section class="main__banner banner">
+        <h2 class="banner__header">Идеальные ясли для ваших малышей</h2>
+        <p class="banner__description">для детей от 1,6</p>
+        <button type="button" class="main__button">
+          <span>Свяжитесь с нами</span>
+        </button>
+      </section>
+      <section class="main__info info-box">
+        <h2 class="info-box__header">Наши тарифы, оплата и дополнительные занятия</h2>
+        <p class="info-box__description">Что именно включено в тарифы, какие дополнительные занятия доступны, сколько
+          часов - вся важная информация по кнопке для получения дополнительной информации.</p>
+        <a href="./prices.html" class="info-box__link">Узнайте больше</a>
+      </section>
+      <section class="main__advantages advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__header">Почему вы должны выбрать именно нас?</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мы самые красивые</h3>
+            <p class="advantages__description">We present you a proposal and discuss niffty-gritty like</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мы самые умные</h3>
+            <p class="advantages__description">Protocols apart from aengage models, pricing billing</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мы самые пунктуальные</h3>
+            <p class="advantages__description">Communication protocols apart from engagement models</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Мы самые лучшие в том, что делаем</h3>
+            <p class="advantages__description">Protocols apart from aengage models, pricing billing</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__news news">
+        <h2 class="visually-hidden">Новости</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <div class="news__video video">
+              <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/neHA4MJwpnY/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/neHA4MJwpnY/maxresdefault.jpg"
+                    alt="Новость №1 Видео">
+                </picture>
+              </a>
+              <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path class="video__button-shape"
+                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                  </path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+            <p class="news__header">Great Digital Product Agency since 2016</p>
+            <p class="news__description">Our Business Plan is a written document describing a company's core business
+              activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high
+              quality
+              Product with modern idea accordingly their budgets and according thir reuirements.</p>
+          </li>
+          <li class="news__item">
+            <img class="news__image" src="img/photo.jpeg" width="180" height="120" alt="Новости №2">
+            <p class="news__header">Great Digital Product Agency since 2016</p>
+            <p class="news__description">Our Business Plan is a written document describing a company's core business
+              activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high
+              quality
+              Product with modern idea accordingly their budgets and according thir reuirements.</p>
+          </li>
+          <li class="news__item">
+            <img class="news__image" src="img/photo.jpeg" width="180" height="120" alt="Новости №3">
+            <p class="news__header">Great Digital Product Agency since 2016</p>
+            <p class="news__description">Our Business Plan is a written document describing a company's core business
+              activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high
+              quality
+              Product with modern idea accordingly their budgets and according thir reuirements.</p>
+          </li>
+          <li class="news__item">
+            <img class="news__image" src="img/photo.jpeg" width="180" height="120" alt="Новости №4">
+            <p class="news__header">Great Digital Product Agency since 2016</p>
+            <p class="news__description">Our Business Plan is a written document describing a company's core business
+              activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high
+              quality
+              Product with modern idea accordingly their budgets and according thir reuirements.</p>
+          </li>
+          <li class="news__item">
+            <img class="news__image" src="img/photo.jpeg" width="180" height="120" alt="Новости №5">
+            <p class="news__header">Great Digital Product Agency since 2016</p>
+            <p class="news__description">Our Business Plan is a written document describing a company's core business
+              activites, Objectives, and how it plans to achieve its goals. Our goal is to provide our client high
+              quality
+              Product with modern idea accordingly their budgets and according thir reuirements.</p>
+          </li>
+        </ul>
+        <div class="news__buttons switch">
+          <button type="button" class="switch__buttons switch__buttons--current">
+            <span class="visually-hidden">Смотреть отзыв №1</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №2</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №3</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №4</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №5</span>
+          </button>
+        </div>
+      </section>
+      <section class="main__reviews reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <p class="reviews__header">Что малыши и их родители говорят о нас?</p>
+        <p class="reviews__description">Честные отзывы родителей, вы также можете оставить свой отзыв</p>
+        <div class="reviews__box card">
+          <ul class="card__list">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <img class="card__image" src="img/photo.jpeg" width="180" height="120" alt="Фото отзыв 1">
+              </a>
+              <p class="card__title">ФИО Родителя, отделение, возраст ребенка</p>
+              <p class="card__description">Текст отзыва</p>
+            </li>
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <img class="card__image" src="img/photo.jpeg" width="180" height="120" alt="Фото отзыв 2">
+              </a>
+              <p class="card__title">ФИО Родителя, отделение, возраст ребенка</p>
+              <p class="card__description">Текст отзыва</p>
+            </li>
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <img class="card__image" src="img/photo.jpeg" width="180" height="120" alt="Фото отзыв 3">
+              </a>
+              <p class="card__title">ФИО Родителя, отделение, возраст ребенка</p>
+              <p class="card__description">Текст отзыва</p>
+            </li>
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <img class="card__image" src="img/photo.jpeg" width="180" height="120" alt="Фото отзыв 4">
+              </a>
+              <p class="card__title">ФИО Родителя, отделение, возраст ребенка</p>
+              <p class="card__description">Текст отзыва</p>
+            </li>
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <img class="card__image" src="img/photo.jpeg" width="180" height="120" alt="Фото отзыв 5">
+              </a>
+              <p class="card__title">ФИО Родителя, отделение, возраст ребенка</p>
+              <p class="card__description">Текст отзыва</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reviews__buttons switch">
+          <button type="button" class="switch__buttons switch__buttons--current">
+            <span class="visually-hidden">Смотреть отзыв №1</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №2</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №3</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №4</span>
+          </button>
+          <button type="button" class="switch__buttons">
+            <span class="visually-hidden">Смотреть отзыв №5</span>
+          </button>
+        </div>
+      </section>
     </div>
   </main>
+  @@include("src/html/base/contact-form.html")
 
   @@include("src/html/base/footer.html")
 
   @@include("src/html/base/modal.html", {
-    "name": "feedback"
+  "name": "feedback"
   })
 
   @@include("src/html/base/modal.html", {
-    "name": "success",
-    "fitContent": true,
-    "noScale": true,
-    "mod": "some-mod"
+  "name": "success",
+  "fitContent": true,
+  "noScale": true,
+  "mod": "some-mod"
   })
 
   <script src="js/vendor.min.js"></script>
