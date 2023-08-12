@@ -3,12 +3,10 @@
     <a href="./index.html" class="header__logo logo">
       Логотип
     </a>
-
     <nav class="header__nav main-nav">
       <button type="button" class="main-nav__toggle" aria-pressed="false">
         Переключатель отображения меню
       </button>
-
       <ul class="main-nav__list">
         <li class="main-nav__item @@if (context.headerActiveLinkIndex === 0) { main-nav__item--active }">
           <a href="./index.html" class="main-nav__link">Главная</a>
@@ -22,11 +20,10 @@
         <li class="main-nav__item @@if (context.headerActiveLinkIndex === 3) { main-nav__item--active }">
           <a href="./reviews.html" class="main-nav__link">Отзывы</a>
         </li>
-
         <li class="main-nav__item @@if (context.headerActiveLinkIndex === 5) { main-nav__item--active }">
           <a href="./news.html" class="main-nav__link">Новости</a>
         </li>
-       <li class="main-nav__item @@if (context.headerActiveLinkIndex === 4) { main-nav__item--active }">
+        <li class="main-nav__item @@if (context.headerActiveLinkIndex === 4) { main-nav__item--active }">
           <a href="./elementary-school.html" class="main-nav__link">Начальная школа</a>
         </li>
         <li class="main-nav__item @@if (context.headerActiveLinkIndex === 6) { main-nav__item--active }">

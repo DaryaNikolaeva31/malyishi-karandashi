@@ -14,50 +14,32 @@
 
   <main class="page__main main">
     <div class="container">
-      <p>
-        <button type="button" class="button" data-open-modal="feedback">modal--feedback link</button>
-      </p>
-      <p>
-        <button type="button" class="button" data-open-modal="success">modal--success link</button>
-      </p>
       <section class="main__prices prices">
-        <h1 class="visually-hidden">Тарифы на пребывание в яслях и старшей группе</h1>
-        <h2 class="prices__header">Наши тарифы</h2>
+        <h1 class="prices__header">Наши тарифы</h1>
         <p class="prices__description">Выберите тариф, добавьте дополнительные занятие и увидите окончательную цену</p>
         <form class="prices__form form" action="#" method="get">
           <fieldset class="form__tariffs">
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__control">
-                  <input class="visually-hidden form__input" type="checkbox" name="full-day" checked>
-                  <img class="form__icon" src="#" width="121" height="121" alt="Иконка 1ого тарифа">
-                  <span class="form__label">Тариф “Полный день”</span>
-                  <span class="form__text">8:00 - 19:00</span>
-                  <button class="form__button" type="button">
-                    <span>25 000 руб.</span>
-                </label>
+                <input class="visually-hidden form__input" type="radio" name="full-day" checked>
+                <img class="form__icon" src="#" width="121" height="121" alt="Иконка 1ого тарифа">
+                <h2 class="form__header">Тариф “Полный день”</h2>
+                <p class="form__text">8:00 - 19:00</p>
+                <label class="form__label">25 000 руб.</label>
               </li>
               <li class="form__item">
-                <label class="form__control">
-                  <input class="visually-hidden form__input" type="checkbox" name="short-day">
-                  <img class="form__icon" src="#" width="121" height="121" alt="Иконка 2ого тарифа">
-                  <span class="form__label">Тариф “Сокращенный день”</span>
-                  <p class="form__text">8:00 - 17:00</p>
-                  <button class="form__button" type="button">
-                    <span>23 000 руб.</span>
-                  </button>
-                </label>
+                <input class="visually-hidden form__input" type="radio" name="short-day">
+                <img class="form__icon" src="#" width="121" height="121" alt="Иконка 2ого тарифа">
+                <h2 class="form__header">Тариф “Сокращенный день”</h2>
+                <p class="form__text">8:00 - 17:00</p>
+                <label class="form__label">23 000 руб.</label>
               </li>
               <li class="form__item">
-                <label class="form__control">
-                  <input class="visually-hidden form__input" type="checkbox" name="half-day">
-                  <img class="form__icon" src="#" width="121" height="121" alt="Иконка 3его тарифа">
-                  <span class="form__label">Тариф “Половина дня”</span>
-                  <p class="form__text">8:00 - 13:00</p>
-                  <button class="form__button" type="button">
-                    <span>21 000 руб.</span>
-                  </button>
-                </label>
+                <input class="visually-hidden form__input" type="radio" name="half-day">
+                <img class="form__icon" src="#" width="121" height="121" alt="Иконка 3его тарифа">
+                <h2 class="form__header">Тариф “Половина дня”</h2>
+                <p class="form__text">8:00 - 13:00</p>
+                <label class="form__label">21 000 руб.</label>
               </li>
             </ul>
           </fieldset>
